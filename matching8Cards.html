@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/50bf15f72d.js" crossorigin="anonymous"></script>
+   <script src="./matchingcards.html"></script>
+
+
+    <style>
+     @media screen and (max-width:320px) {
+      #title{
+        height: 40px;
+       font-size: xx-large;
+        /* border: 1px solid red; */
+        position: relative;
+        left: 170px;
+      
+        background: linear-gradient(to left,violet,indigo,red,green); 
+        -webkit-background-clip: text;
+        color: transparent; 
+    }
+        
+       #child{
+        height: fit-content;
+        width: fit-content;
+        border: 1px solid #c46b6b;
+        background: #fff;
+        cursor: pointer;
+        display: grid;
+        grid-template-columns:repeat(4,auto);
+        
+       } 
+       #timeLeft{
+        position: relative;
+        top: 30px;
+        margin-left: 60px;
+       } 
+       
+       #points{
+          /* border: 1px solid; */
+          height: 100px;
+          width: 100px;
+          font-size: large;
+          position: relative;
+          bottom: 300px;
+          left: 600px;
+         }
+         #p1{
+         text-align: center;
+         }
+         #p2{
+          /* border: 1px solid; */
+          height: 100px;
+          width: 100px;
+          position: relative;
+          left: 600px;
+          bottom: 300px;
+           justify-content: center;
+           display: flex;
+           align-items: center;
+         }
+         .file{
+          text-decoration: none;
+          font-size: large;
+          color: black;
+          text-align: center;
+        }
+     }
+      @media screen and (min-width:321px)and (max-width:768px) {
+        #title{
+        height: 40px;
+       font-size: xx-large;
+        /* border: 1px solid red; */
+        position: relative;
+        text-align: center;
+      
+        background: linear-gradient(to left,violet,indigo,red,green); 
+        -webkit-background-clip: text;
+        color: transparent; 
+    }    
+
+       #child{
+        height: fit-content;
+        width: fit-content;
+        border: 1px solid #c46b6b;
+        background: #fff;
+        cursor: pointer;
+        display: grid;
+        grid-template-columns:repeat(4,auto);
+        padding-right: 40px;
+        margin-left: 40px;
+        
+       }
+       #timeLeft{
+        position: relative;
+        top: 20px;
+        margin-left: 110px;
+       }
+       #points{
+          /* border: 1px solid; */
+          height: 100px;
+          width: 100px;
+          font-size: large;
+          position: relative;
+          bottom: 300px;
+          left: 700px;
+         }
+         #p1{
+         text-align: center;
+         }
+         #p2{
+          /* border: 1px solid; */
+          height: 100px;
+          width: 100px;
+          position: relative;
+          left: 700px;
+          bottom: 300px;
+           text-align: center;
+           text-decoration: none;
+           color: red;
+         }
+        .file{
+          text-decoration: none;
+          font-size: large;
+          color: black;
+          text-align: center;
+        }
+
+     } 
+      @media screen and (min-width:769px)and (max-width:2560px){
+        #title{
+        height: 40px;
+       font-size: xx-large;
+        /* border: 1px solid red; */
+        position: relative;
+        padding-left: 600px;
+      
+        background: linear-gradient(to left,violet,indigo,red,green); 
+        -webkit-background-clip: text;
+        color: transparent; 
+    }
+
+        #child{
+        height: fit-content;
+        width: fit-content;
+        border: 1px solid #c46b6b;
+        background: #fff;
+        cursor: pointer;
+        display: grid;
+        grid-template-columns:repeat(4,auto);
+        padding-right: 50px;
+        margin-left: 450px;
+        position: relative;
+        bottom: 20px;
+        
+       }
+       #timeLeft{
+        position: relative;
+         top: 10px; 
+        margin-left: 500px;
+       }
+       #points{
+          border: 1px solid;
+          height: 100px;
+          width: 100px;
+          font-size: large;
+          position: relative;
+          bottom: 300px;
+          left: 1100px;
+         }
+         #p1{
+         text-align: center;
+         }
+         #p2{
+          /* border: 1px solid; */
+          height: 100px;
+          width: 100px;
+          position: relative;
+          left: 1100px;
+          bottom: 300px;
+           text-align: center;
+           text-decoration: none;
+           color: red;
+         }
+        .file{
+          text-decoration: none;
+          font-size: large;
+          color: black;
+          text-align: center;
+        }
+        
+     } 
+        .two{
+            height: fit-content;
+            width: fit-content;
+            border: 1px solid #fff;
+            background:#fff;
+            border-radius: 8px;
+            box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
+        }
+                  
+        .three{
+            height: fit-content;
+            width: fit-content;
+            border: 1px solid #fff;
+            background:#fff;
+            border-radius: 8px;
+            box-shadow: 0px 3px 10px rgba(0,0,0,1.5);
+            display: none;
+            
+        }
+        .fa-question{
+            height: 100px;
+            width: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        img{
+            height: 100px;
+            width: 100px;
+        }
+         .front-view{
+            font-size: 70px;
+             border: 1px solid;  
+             box-shadow: 1px 1px;
+        } 
+        
+         #left{
+            background:-webkit-radial-gradient(green,yellow,black)
+         } 
+
+        .btn-100 {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  font-weight: 900;
+  text-transform: uppercase;
+  -webkit-tap-highlight-color: transparent;
+  /* -webkit-appearance: button; */
+}
+
+.btn-100:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: calc(var(--margin, 5px) * -1);
+  width: 100%;
+  height: var(--thickness, 4px);
+  background: #fff;
+  pointer-events: none;
+  -webkit-animation: uncover 0.5s forwards;
+  animation: uncover 0.5s forwards;
+}
+
+.btn-100:hover:before {
+  -webkit-animation: cover 0.5s forwards;
+  animation: cover 0.5s forwards;
+}
+
+@-webkit-keyframes cover {
+  0% {
+    bottom: calc(var(--margin, 5px) * -1);
+    height: var(--thickness, 4px);
+  }
+  50% {
+    bottom: calc(var(--margin, 5px) * -1);
+    height: 100%;
+  }
+  to {
+    bottom: 100%;
+    height: var(--thickness, 4px);
+  }
+}
+
+@keyframes cover {
+  0% {
+    bottom: calc(var(--margin, 5px) * -1);
+    height: var(--thickness, 4px);
+  }
+  50% {
+    bottom: calc(var(--margin, 5px) * -1);
+    height: 100%;
+  }
+  to {
+    bottom: 100%;
+    height: var(--thickness, 4px);
+  }
+}
+
+@-webkit-keyframes uncover {
+  to {
+    bottom: calc(var(--margin, 5px) * -1);
+    height: var(--thickness, 4px);
+  }
+  50% {
+    bottom: calc(var(--margin, 5px) * -1);
+    height: 100%;
+  }
+  0% {
+    bottom: 100%;
+    height: var(--thickness, 4px);
+  }
+}
+
+@keyframes uncover {
+  to {
+    bottom: calc(var(--margin, 5px) * -1);
+    height: var(--thickness, 4px);
+  }
+  50% {
+    bottom: calc(var(--margin, 5px) * -1);
+    height: 100%;
+  }
+  0% {
+    bottom: 100%;
+    height: var(--thickness, 4px);
+  }
+}
+    </style>
+</head>
+<body> 
+    
+    <!-- npm install @mui/material @emotion/react @emotion/styled -->
+     <!-- responsivenesss  ui(buttons) levels Restart(middle also)  -->
+      <header>
+        <h2 id="title">MATCHING CARDS</h2>
+      </header>
+    
+    <div id="child">
+       <ol>
+          <div id="card">
+            <div class="two front-view">
+                <i class="fa-solid fa-question" ></i>
+            </div>
+            <div class="three back-view">
+                <img src="../Memory Card Game Images/img-1.png" alt="" srcset="">
+            </div>
+          </div>
+        </ol>
+        <ol>
+        <div id="card">
+            <div class="two front-view">
+                <i class="fa-solid fa-question"></i>
+            </div>
+            <div class="three back-view">
+                <img src="../Memory Card Game Images/img-2.png" alt="" srcset="">
+            </div>
+        </div>
+       
+       
+    </ol>
+    <ol>
+            <div class="two front-view">
+                <i class="fa-solid fa-question"></i>
+            </div>
+            <div class="three back-view">
+                <img src="../Memory Card Game Images/img-3.png" alt="" srcset="" >
+            </div>
+        
+        </ol>
+
+    <ol>
+        
+            <div class="two front-view">
+                <i class="fa-solid fa-question"></i>
+            </div>
+            <div class=" three back-view">
+                <img src="../Memory Card Game Images/img-4.png" alt="" srcset="">
+            </div>
+        </ol>
+      
+        <ol>
+            <div class="two front-view">
+                <i class="fa-solid fa-question"></i>
+            </div>
+            <div class="three back-view">
+                <img src="../Memory Card Game Images/img-1.png" alt="" srcset="">
+            </div>
+        </ol>
+      
+        <ol>
+            <div class="two front-view" >
+                <i class="fa-solid fa-question"></i>
+            </div>
+            <div class="three back-view">
+                <img src="../Memory Card Game Images/img-2.png" alt="" srcset="">
+            </div>
+        </ol>
+       <ol>
+        
+            <div class="two front-view">
+                <i class="fa-solid fa-question"></i>
+            </div>
+            <div class="three back-view">
+                <img src="../Memory Card Game Images/img-3.png" alt="" srcset="">
+            </div>
+        </ol>
+       <ol>
+            <div class="two front-view">
+                <i class="fa-solid fa-question"></i>
+            </div>
+            <div class="three back-view">
+                <img src="../Memory Card Game Images/img-4.png" alt="" srcset="">
+            </div>
+        </ol>
+
+      
+    </div>
+    <div id="timeLeft">
+        <div id="time"></div>
+        <div id="left"></div>
+        <button class="btn-100 reStart">Restart</button>
+    </div>
+    <div id="points">
+       <pre id="p1">POINTS : 0</pre>
+       
+    </div>
+    <p id="p2"></p>   
+
+    <script>
+       let child =document.getElementById("child")
+       let p1=document.getElementById("p1")
+       let p2=document.getElementById("p2")
+c=0
+      function position(array){
+        for( let i=array.length - 1 ;i>0 ;i--){
+            let j = Math.floor(Math.random() * (i + 1))
+           let temp=array[i]
+           array[i]=array[j]
+           array[j]=temp
+        }
+      }
+      function changes(){
+        let k=(Array.from(child.children))
+        position(k)
+        k.forEach(card=>child.appendChild(card))
+      }
+      window.onload=changes;
+   
+      let emp=[]
+      let s=false
+   document.querySelectorAll('#child ol').forEach((k)=>{
+        k.addEventListener("click",()=>{
+            
+            if(s || i==0)return   //|| i>20
+            if(emp.includes(k)) return
+            k.querySelector('.two').style.transform='rotateY(180deg)'
+                k.querySelector('.two').style.transitionDuration= '1s';
+  
+            setTimeout(() => {
+
+                k.querySelector('.two').style.display='none'; 
+               k.querySelector('.three').style.display='block';
+             
+            }, 300);
+            emp.push(k)
+            if(emp.length==2){
+                setTimeout(() => {
+                    checkMatch()
+                },500);
+            }
+            
+        })
+    })
+
+    let card1, card2;
+    function checkMatch(){
+         card1=emp[0]
+         card2=emp[1]
+       
+    
+               let match=card1.querySelector('img').src===card2.querySelector('img').src
+            
+               if(match){
+               card1.querySelector('.two')    
+               card2.querySelector('.two')
+                 card1.removeEventListener("click",card1.clickEvent)
+                 card2.removeEventListener("click",card2.clickEvent)
+               c++
+             
+                setTimeout(() => {
+                    card1.style.zIndex='-1'
+                    card2.style.zIndex='-1'
+                }, 300);
+
+                 function demo(value){
+                 return Math.floor(Math.random()*(value+1))
+                }
+                function color(){
+                 let r=demo(255)
+                 let g=demo(255)
+                 let b=demo(255)
+                 return `rgb(${r},${b},${b})`    
+                }
+                child.style.backgroundColor=color()
+               
+              }
+
+            else{
+           const song=new Audio('./livechat-129007.mp3')
+            song.play();
+            setTimeout(() => {
+            card1.querySelector('.two').style.display='block'
+            card1.querySelector('.three').style.display='none'
+            card1.querySelector('.two').style.transform='rotateY(0deg)'
+          
+            card2.querySelector('.two').style.display='block'
+            card2.querySelector('.three').style.display='none'
+            card2.querySelector('.two').style.transform='rotateY(0deg)'
+            
+        },300);
+     }
+     if(c>0){
+        p1.innerHTML='POINTS: '+c
+     }
+     if(c==3){
+      p2.innerHTML='YOUR PLAYING WELL!'
+     }
+    else if(c==4){
+      
+        p2.innerHTML='<a href="./matchingcards.html"class="file">Next Level</a>';
+     }
+
+      emp=[]
+       s=false
+    }
+
+    let timeLeft=document.getElementById("timeLeft")
+     timeLeft.setAttribute('style','display:flex;justify-content:center;width:400px') //position:relative;bottom:-40px;right:60px;  border:1px solid;
+
+    let left=document.getElementById("time")
+    left.innerHTML='<h2>TIME LEFT:</h2>'
+    left.setAttribute('style','height:50px;width:300px;display:flex;align-Items:center;justify-Content:center')    //position:relative;right:50px
+   
+    let time=document.getElementById("left")
+   
+    time.setAttribute('style','height:50px;width:100px;display:flex;align-Items:center;justify-Content:center ;border:1px solid;') //position:relative;right:30px
+    
+     let reStart=document.getElementsByTagName("button")[0]
+    // reStart.setAttribute('style','height:50px;width:100px;border:1px solid red;display:flex;align-Items:center;justify-Content:center;color:red')
+   reStart.innerHTML='Restart'
+   reStart.setAttribute('style','position:relative;left:40px')
+ 
+    let stop;
+    let i;
+    function counter()
+    {
+       
+        i=30;
+        if(i != 0)
+        {
+            time.innerHTML=""
+            time.style.color='';
+            time.style.fontSize='';
+        }
+         stop = setInterval(() => {
+            time.innerHTML=String(i).padStart(2,'0')
+            i--
+            if(i==0){
+                
+                clearInterval(stop);
+                time.innerHTML="00"
+                time.style.fontSize='25px'
+                time.style.color='white'
+            }
+        }, 1000);
+        
+    }
+    counter();
+    reStart.addEventListener("click",()=>{
+        
+    
+        clearInterval(stop);
+        counter(); 
+        window.location.reload();
+        
+     })
+    </script>
+
+</body>
+</html>
