@@ -329,8 +329,6 @@
 </head>
 <body> 
     
-    <!-- npm install @mui/material @emotion/react @emotion/styled -->
-     <!-- responsivenesss  ui(buttons) levels Restart(middle also)  -->
       <header>
         <h2 id="title">MATCHING CARDS</h2>
       </header>
@@ -539,13 +537,14 @@ c=0
 
     let left=document.getElementById("time")
     left.innerHTML='<h2>TIME LEFT:</h2>'
-    left.setAttribute('style','height:50px;width:300px;display:flex;align-Items:center;justify-Content:center') 
+    left.setAttribute('style','height:50px;width:300px;display:flex;align-Items:center;justify-Content:center')    //position:relative;right:50px
    
     let time=document.getElementById("left")
    
-    time.setAttribute('style','height:50px;width:100px;display:flex;align-Items:center;justify-Content:center ;border:1px solid;')x
+    time.setAttribute('style','height:50px;width:100px;display:flex;align-Items:center;justify-Content:center ;border:1px solid;') //position:relative;right:30px
     
      let reStart=document.getElementsByTagName("button")[0]
+    // reStart.setAttribute('style','height:50px;width:100px;border:1px solid red;display:flex;align-Items:center;justify-Content:center;color:red')
    reStart.innerHTML='Restart'
    reStart.setAttribute('style','position:relative;left:40px')
  
