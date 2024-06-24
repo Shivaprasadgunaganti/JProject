@@ -220,8 +220,8 @@
             
         }
         img{
-            height: 100px;
-            width: 100px;
+            height: 80px;
+            width: 80px;
         }
          .front-view{
             font-size: 70px;
@@ -329,8 +329,6 @@
 </head>
 <body> 
     
-    <!-- npm install @mui/material @emotion/react @emotion/styled -->
-     <!-- responsivenesss  ui(buttons) levels Restart(middle also)  -->
       <header>
         <h2 id="title">MATCHING CARDS</h2>
       </header>
@@ -342,7 +340,7 @@
                 <i class="fa-solid fa-question" ></i>
             </div>
             <div class="three back-view">
-                <img src="../Memory Card Game Images/img-1.png" alt="" srcset="">
+                <img src="./img-1.png" alt="" srcset="">
             </div>
           </div>
         </ol>
@@ -352,7 +350,7 @@
                 <i class="fa-solid fa-question"></i>
             </div>
             <div class="three back-view">
-                <img src="../Memory Card Game Images/img-2.png" alt="" srcset="">
+                <img src="./img-2.png" alt="" srcset="">
             </div>
         </div>
        
@@ -363,7 +361,7 @@
                 <i class="fa-solid fa-question"></i>
             </div>
             <div class="three back-view">
-                <img src="../Memory Card Game Images/img-3.png" alt="" srcset="" >
+                <img src="./img-3.png" alt="" srcset="" >
             </div>
         
         </ol>
@@ -374,7 +372,7 @@
                 <i class="fa-solid fa-question"></i>
             </div>
             <div class=" three back-view">
-                <img src="../Memory Card Game Images/img-4.png" alt="" srcset="">
+                <img src="./img-4.png" alt="" srcset="">
             </div>
         </ol>
       
@@ -383,7 +381,7 @@
                 <i class="fa-solid fa-question"></i>
             </div>
             <div class="three back-view">
-                <img src="../Memory Card Game Images/img-1.png" alt="" srcset="">
+                <img src="./img-1.png" alt="" srcset="">
             </div>
         </ol>
       
@@ -392,7 +390,7 @@
                 <i class="fa-solid fa-question"></i>
             </div>
             <div class="three back-view">
-                <img src="../Memory Card Game Images/img-2.png" alt="" srcset="">
+                <img src="./img-2.png" alt="" srcset="">
             </div>
         </ol>
        <ol>
@@ -401,7 +399,7 @@
                 <i class="fa-solid fa-question"></i>
             </div>
             <div class="three back-view">
-                <img src="../Memory Card Game Images/img-3.png" alt="" srcset="">
+                <img src="./img-3.png" alt="" srcset="">
             </div>
         </ol>
        <ol>
@@ -409,7 +407,7 @@
                 <i class="fa-solid fa-question"></i>
             </div>
             <div class="three back-view">
-                <img src="../Memory Card Game Images/img-4.png" alt="" srcset="">
+                <img src="./img-4.png" alt="" srcset="">
             </div>
         </ol>
 
@@ -535,18 +533,17 @@ c=0
     }
 
     let timeLeft=document.getElementById("timeLeft")
-     timeLeft.setAttribute('style','display:flex;justify-content:center;width:400px') //position:relative;bottom:-40px;right:60px;  border:1px solid;
+     timeLeft.setAttribute('style','display:flex;justify-content:center;width:400px') 
 
     let left=document.getElementById("time")
     left.innerHTML='<h2>TIME LEFT:</h2>'
-    left.setAttribute('style','height:50px;width:300px;display:flex;align-Items:center;justify-Content:center')    //position:relative;right:50px
+    left.setAttribute('style','height:50px;width:300px;display:flex;align-Items:center;justify-Content:center')  
    
     let time=document.getElementById("left")
    
-    time.setAttribute('style','height:50px;width:100px;display:flex;align-Items:center;justify-Content:center ;border:1px solid;') //position:relative;right:30px
+    time.setAttribute('style','height:50px;width:100px;display:flex;align-Items:center;justify-Content:center ;border:1px solid;')
     
      let reStart=document.getElementsByTagName("button")[0]
-    // reStart.setAttribute('style','height:50px;width:100px;border:1px solid red;display:flex;align-Items:center;justify-Content:center;color:red')
    reStart.innerHTML='Restart'
    reStart.setAttribute('style','position:relative;left:40px')
  
